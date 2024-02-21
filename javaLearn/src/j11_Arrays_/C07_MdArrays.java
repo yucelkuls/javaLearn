@@ -1,4 +1,4 @@
-package j11_Arrays_.j11_Arrays;
+package j11_Arrays_;
 
 import java.util.Arrays;
 
