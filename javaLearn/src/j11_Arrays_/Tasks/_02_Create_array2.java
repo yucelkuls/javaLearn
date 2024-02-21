@@ -1,4 +1,6 @@
-package j11_Arrays_.j11_Arrays.Tasks;
+package j11_Arrays_.Tasks;
+
+import java.util.Arrays;
 
 public class _02_Create_array2 {
 
@@ -9,7 +11,7 @@ public class _02_Create_array2 {
                 Arrayin elemanlarını yazdırın.
      */
         // Kodu aşağıya yazınız..
-
-
+        int[] arr = {13, 15, 14, 16, 16};
+        System.out.println(Arrays.toString(arr));
     }
 }

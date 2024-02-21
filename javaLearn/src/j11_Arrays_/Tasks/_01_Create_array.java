@@ -1,4 +1,6 @@
-package j11_Arrays_.j11_Arrays.Tasks;
+package j11_Arrays_.Tasks;
+
+import java.util.Arrays;
 
 public class _01_Create_array {
 
@@ -11,6 +13,9 @@ public class _01_Create_array {
 
         //Kodu aşağıya yazınız.
 
+        String[] fruits = {"Apple", "Orange", "Banana", "Kiwi"};
+        System.out.println(Arrays.toString(fruits)); // Heap memory arrays icini getiriyor.
+        System.out.println(fruits);  // Stack memory deki referans degerini getiriyor.
 
     }
 }

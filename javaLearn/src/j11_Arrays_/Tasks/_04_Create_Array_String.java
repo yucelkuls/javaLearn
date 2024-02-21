@@ -1,4 +1,4 @@
-package j11_Arrays_.j11_Arrays.Tasks;
+package j11_Arrays_.Tasks;
 
 public class _04_Create_Array_String {
 
@@ -11,6 +11,7 @@ public class _04_Create_Array_String {
          */
 
         // Kodu aşağıya yazınız..
+
 
 
 
