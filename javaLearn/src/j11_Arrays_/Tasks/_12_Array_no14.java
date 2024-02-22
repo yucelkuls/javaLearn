@@ -1,4 +1,4 @@
-package j11_Arrays_.j11_Arrays.Tasks;
+package j11_Arrays_.Tasks;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -27,7 +27,7 @@ public class   _12_Array_no14 {
 
         String str1 = scan.nextLine();
 
-        String[] arr1 = str1.split(" ");
+        String[] arr1 = str1.split("");
 
         int[] intArr = new int[arr1.length];
 

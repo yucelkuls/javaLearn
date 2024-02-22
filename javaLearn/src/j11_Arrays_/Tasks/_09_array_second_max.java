@@ -1,4 +1,6 @@
-package j11_Arrays_.j11_Arrays.Tasks;
+package j11_Arrays_.Tasks;
+
+import java.util.Arrays;
 
 public class _09_array_second_max {
 
@@ -10,6 +12,14 @@ public class _09_array_second_max {
          */
 
         // Kodu aşağıya yazınız..
+        int [] arr = {15, 25, 22, 18, 30};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        System.out.println("En buyuk 2. eleman : "+arr[arr.length - 2]);
+
+
+
+
 
 
     }

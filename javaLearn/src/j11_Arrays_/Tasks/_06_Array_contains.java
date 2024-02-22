@@ -1,4 +1,4 @@
-package j11_Arrays_.j11_Arrays.Tasks;
+package j11_Arrays_.Tasks;
 
 public class _06_Array_contains {
 
@@ -12,7 +12,15 @@ public class _06_Array_contains {
          */
 
         //Kodu aşağıya yazınız..
+        String [] arr = {"Apple","Orange","Banana","Pineapple"};
+        boolean appelVarmi= false;
 
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals("Apple")) {
+                appelVarmi = true;
+            }
+        }
+        System.out.println(appelVarmi);
 
     }
 }
