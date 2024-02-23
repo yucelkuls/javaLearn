@@ -20,5 +20,7 @@ public class C13_sort_reverse {
         System.out.println("reverse oncesi sayiList = " + sayiList);
         Collections.reverse(sayiList);
         System.out.println("reverse sonrasi sayiList = " + sayiList); //[16, 7, 11, 49, 62, 21, 12, 23]
+
+
     }
 }

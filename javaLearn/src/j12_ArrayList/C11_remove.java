@@ -1,9 +1,7 @@
 package j12_ArrayList;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 public class C11_remove {
     public static void main(String[] args) {
         //remove()-> list'te istenen elemanı siler
@@ -23,7 +21,8 @@ public class C11_remove {
         System.out.println("ulkeList.removeAll(sehirList) = " + ulkeList.removeAll(sehirList));
         System.out.println("removeAll sonrasi ulkeList = " + ulkeList);
 
-        System.out.println("sehirList.removeAll(sehirList) = " + sehirList.removeAll(sehirList)); // true, kendi kendini sildik.
+        System.out.println("sehirList.removeAll(sehirList) = " + sehirList.removeAll(sehirList));
+        // true, kendi kendini sildik.
         System.out.println("sehirList = " + sehirList); // []
 
         List<Integer> sayiList = new ArrayList<>(Arrays.asList(12,14,21,43,65,4,7,67));

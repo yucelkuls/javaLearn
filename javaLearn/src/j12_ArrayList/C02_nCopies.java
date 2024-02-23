@@ -13,14 +13,18 @@ public class C02_nCopies {
 
         List<String> yeniList = new ArrayList<>(Collections.nCopies(7, "JavaCAN"));
         System.out.println("yeniList = " + yeniList);
+        // [JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN]
+
 
         // adAll(List) -> parametre olarak girilen List i istenen List e ekler.
         System.out.println("Ulke list in ilk hali = "+ulkeList);  //[Almanya, Isvec, Hollanda, Belcika, Finlandiya]
         System.out.println("isimList in ilk hali = " + isimList); //[Saim, Safvet, Halit, Semra, Seher, Enes]
         ulkeList.addAll(isimList);
-        System.out.println("ulkeList e isimList eklenmis hali = " + ulkeList); // [Almanya, Isvec, Hollanda, Belcika, Finlandiya, Saim, Safvet, Halit, Semra, Seher, Enes]
+        System.out.println("ulkeList e isimList eklenmis hali = " + ulkeList);
+        // [Almanya, Isvec, Hollanda, Belcika, Finlandiya, Saim, Safvet, Halit, Semra, Seher, Enes]
 
         isimList.addAll(3, yeniList);
-        System.out.println("isimList = " + isimList); // [Saim, Safvet, Halit, JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN, Semra, Seher, Enes]
+        System.out.println("isimList = " + isimList);
+        // [Saim, Safvet, Halit, JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN, JavaCAN, Semra, Seher, Enes]
     }
 }

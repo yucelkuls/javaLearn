@@ -8,6 +8,7 @@ public class C07_Contains {
         //contains()-> list'te istenen elamnın varlığını control eder true/false return eder
         ArrayList<String> ulkeList = new ArrayList<>(List.of("Almanya", "Isvec", "Danimarka", "Belcika", "Hollanda", "Finlandiya"));
         System.out.println("ulkeList.contains(\"Hollanda\") = " + ulkeList.contains("Hollanda")); // true
-        System.out.println("ulkeList.contains(\"finlandiya\") = " + ulkeList.contains("finlandiya")); // false kucuk harf ile yazdigimiz icin.
+        System.out.println("ulkeList.contains(\"finlandiya\") = " + ulkeList.contains("finlandiya"));
+        // false kucuk harf ile yazdigimiz icin.
     }
 }

@@ -18,7 +18,5 @@ public class C06_isEmpty_Clear {
         System.out.println("ulkeList.isEmpty() = " + ulkeList.isEmpty()); // true
         System.out.println("ulkeList = " + ulkeList); // []
 
-
-
     }
 }

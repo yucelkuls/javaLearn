@@ -11,7 +11,7 @@ public class C03_IndexOf {
         System.out.println("ulkeList.indexOf(\"Turkiye\") = " + ulkeList.indexOf("Turkiye")); // -1 verir.
 
         ulkeList.add("Ukrayna");
-        ulkeList.add("Isvec");
+        ulkeList.add("Isvec"); // burada en sona tekrar "Isvec" eklendi.
         System.out.println("ulkeList.indexOf(\"Isvec\") = " + ulkeList.indexOf("Isvec")); // 1
         System.out.println("ulkeList.lastIndexOf(\"Isvec\") = " + ulkeList.lastIndexOf("Isvec")); // 6
     }

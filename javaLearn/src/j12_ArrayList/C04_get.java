@@ -10,5 +10,6 @@ public class C04_get {
         ArrayList<String> ulkeList = new ArrayList<>(List.of("Almanya", "Isvec", "Danimarka", "Belcika", "Hollanda", "Finlandiya"));
         System.out.println("ulkeList.get(2) = " + ulkeList.get(2)); // Danimarka
         System.out.println("ulkeList.get(8) = " + ulkeList.get(8)); // IndexOutOfBoundsException
+
     }
 }
