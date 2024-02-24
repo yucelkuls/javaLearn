@@ -16,11 +16,7 @@ public class Task01 {
             System.out.println("lutfen "+ (i+1) + ". elemani giriniz: ");
             arr[i] = scanner.nextInt();
         }
-        System.out.println(Arrays.toString(arr));
         Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
-
-
         int [] buyuktenKucuk = new int [arr.length];
         int index = 0;
         for (int i = arrayLength-1 ; i >=0 ; i--) {
