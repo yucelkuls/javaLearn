@@ -1,4 +1,4 @@
-package j11_Arrays_.j11_Arrays.Tasks;
+package j11_Arrays_.Tasks;
 
 public class _15_Word_Count {
 

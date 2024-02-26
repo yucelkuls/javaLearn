@@ -1,3 +1,5 @@
+package j101_InterviewQuestionsJava;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,6 +24,30 @@ public class Q33_ListCollectionsMethodsTask {
 
 
     public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);   // step 1
+
+        ArrayList<Integer> sayiList = new ArrayList<>();
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println((i + 1) + ". sayiyi giriniz : ");
+            sayiList.add(input.nextInt());
+        }
+        System.out.println("sayiList insertion order hali "+ sayiList);
+
+        Collections.reverse(sayiList);
+        System.out.println("sayiList reverse hali = " + sayiList);
+        Collections.shuffle(sayiList);
+        System.out.println("sayiList karistirilmis hali = " + sayiList);
+
+        // part 2
+
+        System.out.println("Collections.max(sayiList) = " + Collections.max(sayiList));
+        int maxSayi = Collections.max(sayiList);
+        System.out.println("Collections.min(sayiList) = " + Collections.min(sayiList));
+        int minSayi = Collections.min(sayiList);
+        System.out.println(Collections.replaceAll(sayiList, maxSayi, minSayi));
+        System.out.println("sayiList replace sonrasi = " + sayiList);
 
     }
 }

@@ -1,3 +1,5 @@
+package j101_InterviewQuestionsJava;
+
 public class Q41_IFElse {
 		/* Task->
         Write a method which prints out the numbers from 1 to 30 but for numbers which are a multiple of 3,
