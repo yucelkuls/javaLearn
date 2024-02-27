@@ -2,6 +2,8 @@ package j12_ArrayList.Tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class _04_arraylist4 {
 
@@ -21,7 +23,19 @@ public class _04_arraylist4 {
      */
 
     public static void main(String[] args) {
+        List<String> str = new ArrayList<>(Arrays.asList("yellow", "red", "blue", "red", "blue"));
+        String s1 = "blue";
+        String s2 = "yellow";
 
+        System.out.println(changeInArraylist(str, s1, s2));//[yellow, red, yellow, red, yellow]
+
+
+    }
+
+    private static List<String> changeInArraylist(List<String> arrList, String s1, String s2) {
+
+        Collections.replaceAll(arrList, s1, s2);
+        return arrList;
 
     }
 }
