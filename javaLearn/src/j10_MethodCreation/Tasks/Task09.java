@@ -9,9 +9,14 @@ public class Task09 {
     /*
    Task->  Saati saniyeye çeviren  method create ediniz
     */
-
-
+        convertHourToSecond();
 
     }//main sonu
+
+    private static void convertHourToSecond() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the hours you want to convert: ");
+        System.out.println((sc.nextInt() * 3600) + " seconds");
+    }
 
 }// Class sonu

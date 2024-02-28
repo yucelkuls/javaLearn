@@ -14,10 +14,12 @@ public class Task11 {
         e->2
          */
 
+        hackerSpeak();
+    }
 
-
+    private static void hackerSpeak() {
+        System.out.print("Please enter your text");
+        String str = input.nextLine();
+        System.out.println(str.replaceAll("a", "7").replaceAll("v", "1").replaceAll("c", "-4").replaceAll("e", "2"));
     }//main sonu
-
-
-
 }//Class sonu

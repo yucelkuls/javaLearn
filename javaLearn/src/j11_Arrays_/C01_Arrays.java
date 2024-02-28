@@ -22,7 +22,11 @@ Array tanımlamak için:
         String[] isimler = {"saim", "halit", "safvet", "abdurrahman", "yucel", "sema"};
         int sayiArr[] = new int[5];   // eleman sayisi belli, ama elemanlar atanmamis.
         int sayiArr1[] = new int[7];  // eleman sayisi belli, ama elemanlar atanmamis.
+        arr = new int [2];
+        arr[0] = 2;
+        arr[1] = 3;
 
+        System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr));
         // Array' e eleman girisi -> update
         sayiArr[3] = 61;
         sayiArr[4] = 58;

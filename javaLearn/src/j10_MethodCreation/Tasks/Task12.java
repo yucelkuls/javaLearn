@@ -18,8 +18,14 @@ public class Task12 {
         "ebıkGabık@gmail.com"-> true
          */
 
+        System.out.println("controlToEmail(email) = " + controlToEmail());
+
     }//main sonu
 
-
+    private static boolean controlToEmail() {
+        System.out.println("Please enter your email address : ");
+        String email = input.next();
+        return (email.contains("@") && email.contains(".") && !email.startsWith("@"));
+    }
 
 }//Class sonu
