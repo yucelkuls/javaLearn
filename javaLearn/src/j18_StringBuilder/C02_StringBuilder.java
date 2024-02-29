@@ -87,6 +87,34 @@ public class C02_StringBuilder {
         StringBuilder sb5=new StringBuilder(str);//String variable sb'ye atandi
         System.out.println("sb5 = " + sb5);//Hayirli geceler
 
+        /*
+    compareTo()->metodunu iki SB'i eşitliğini kontrol etmek için ilk characterden itibaren tum characterleri karşılaştırır.
+    eşit characterler için herhangi bir return vermezken farklı characterler için ascii table göre
+    kaç değer geri veya ileri oldgunu print eder
+    Tum characterler eşit ise 0 return eder
+    ahan da Trick-> SB ile String variable compare edilirse :CTE -> elma armut kıyası olmaz...
+    */
 
+        StringBuilder sb6=new StringBuilder("Bahanesi olanin basarisi olmaz");
+        StringBuilder sb7=new StringBuilder("Bahanesi olanin basarisi olmaz");
+        StringBuilder sb8=new StringBuilder("Bahanesi olanin basarisi Olmaz");
+        System.out.println("sb6.length() = " + sb6.length());
+        System.out.println("sb6.capacity() = " + sb6.capacity());
+        String str1="Bahanesi olanin basarisi olmaz";
+        System.out.println("sb6.compareTo(sb7) = " + sb6.compareTo(sb7));//0
+        System.out.println("sb6.compareTo(sb8) = " + sb6.compareTo(sb8));//32
+        //System.out.println("sb6.compareTo(str) = " + sb6.compareTo(str));//CTE->elma ile armut kiyaslanmaz
+        System.out.println("sb6.compareTo(new StringBuilder(str1)) = " + sb6.compareTo(new StringBuilder(str1)));//0
+
+        //sb esitligi
+        System.out.println("sb6.equals(sb7) = " + (sb6.equals(sb7)));
+        System.out.println("sb6==sb7 = " + (sb6 == sb7));
+        System.out.println("sb6.equals(str1) = " + (sb6.equals(str1)));
+        //System.out.println("sb6==str1 = " + (sb6 == str1));//Cte
+        //trick-> SB'de equals() meth ayni == gibi hem referans hemde value karsilastirmasi yapar true veya false retur eder
+
+        //SB'de karakterleri indexe gore ters cevirme yani tersten yazma
+        System.out.println("reverse oncesi sb6 : "+sb6);//Bahanesi olanin basarisi olmaz
+        System.out.println("reverse sonrasi sb6 : "+sb6.reverse());//zamlo isirasab ninalo isenahaB
     }
 }

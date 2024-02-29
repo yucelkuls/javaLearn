@@ -24,11 +24,26 @@ public class Task13 {
 
         System.out.println("controlToString() = " + controlToString());
 
-        // startswith veya endswith
-        System.out.println("x.endsWith(y) = " + x.endsWith(y));
+        // 2. yol  startswith veya endswith
+        System.out.println("controlEnd() = " + controlEnd());
 
-    }//main sonu
+}//main sonu
 
+private static boolean controlEnd() {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("metin girin : ");
+    String birinci = scan.nextLine();
+    System.out.println("metin girin : ");
+    String ikinci = scan.nextLine();
+    boolean esitMi = false;
+
+    if (birinci.endsWith(ikinci)) {
+        esitMi = true;
+
+    }
+    return esitMi;
+
+}
     private static boolean controlToString() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter first string: ");

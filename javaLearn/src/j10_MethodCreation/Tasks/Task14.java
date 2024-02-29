@@ -9,13 +9,12 @@ public class Task14 {
     /* task->
     Fazla mesaiyi hesaplayan ve toplam kazancı return eden method create ediniz
 
-
     Kullanıcıdan saatlik çalışma ücretini, hangi saatler arasında çalıştığını ve
     fazla mesaiye kalırsa kazancını kaç ile katlayacağını alalım.
 
     Örnek :
     saatlik çalışma ücreti : 40.0
-   iş başı saati : 9.0
+    iş başı saati : 9.0
     paydos saati : 20.0
     fazla mesaiyi saat ücreti çarpanı: 1.8
 
@@ -30,9 +29,4 @@ public class Task14 {
 
 
     }//main sonu
-
-
-
-
-
 }//class sonu

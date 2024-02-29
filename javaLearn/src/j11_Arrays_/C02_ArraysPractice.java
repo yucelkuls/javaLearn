@@ -2,7 +2,7 @@ package j11_Arrays_;
 
 import java.util.Arrays;
 
-public class C02_ArraysPractice {
+public class  C02_ArraysPractice {
     public static void main(String[] args) {
         String[] isimler = {"saim", "halit", "safvet", "abdurrahman", "yucel", "sema"};
         int sayiArr[] = {20, 32, 7, 58, 63, 59, 35, 17, 16, 21};

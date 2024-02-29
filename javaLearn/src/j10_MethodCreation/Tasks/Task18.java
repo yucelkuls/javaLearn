@@ -24,6 +24,18 @@ public class Task18 {
         int b = input.nextInt();
         int c = input.nextInt();
 
+        dikucgen(a, b, c);
+
+
+    }
+
+    private static void dikucgen(int x, int y, int z) {
+
+        if ( (Math.pow(y, 2)) + (Math.pow(x, 2)) == Math.pow(z, 2) || (Math.pow(y, 2)) + (Math.pow(z, 2)) == Math.pow(x, 2) ||
+        Math.pow(z,2)+Math.pow(x,2)==Math.pow(y,2)){
+            System.out.println("dik ucgendir.");
+
+        }else System.out.println("dık ucgen değildir.");
 
     }
 }

@@ -10,8 +10,17 @@ public class Task19 {
 
     */
 
+        counter();
 
 
+    }
 
+    private static void counter() {
+
+        int count = 'a' /'a';  // buradan 1 sayisi gelir.
+
+        while (count <= 'd'){
+            System.out.println( );
+        }
     }
 }
