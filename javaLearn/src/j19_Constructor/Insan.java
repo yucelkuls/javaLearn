@@ -21,9 +21,11 @@ public class Insan {  // Class level
     public Insan(String name, String nameOfFather) {    // 2 parameter const
         this.name = name;
         this.nameOfFather = nameOfFather;
+
     }
 
     public Insan(String name, int age) {   // 2 parameter const
+
         this.name = name;
     }
 

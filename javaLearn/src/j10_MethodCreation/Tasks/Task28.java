@@ -18,7 +18,8 @@ public class Task28 {
         int max = Integer.MAX_VALUE;
         System.out.println(randomNum(max));
     }
-    private static int randomNum(int max) {
-        return (int) (Math.random() * max);
+    private static int randomNum(int number) {
+
+        return (int) (Math.random() * number);
     }
 }

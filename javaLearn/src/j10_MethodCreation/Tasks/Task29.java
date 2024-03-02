@@ -38,10 +38,16 @@ public class Task29 {
         System.out.print("Sayı giriniz: ");
         int sayi = input.nextInt();
 
-
-
+        System.out.println("powerOfThree(sayi) = " + powerOfThree(sayi));
 
     }
-
-
+    private static boolean powerOfThree(int sayi) {
+        if (sayi > 2) {
+            while (sayi % 3 == 0) {
+                sayi /= 3;
+            }
+            return sayi == 1;
+        }
+        return false;
+    }
 }

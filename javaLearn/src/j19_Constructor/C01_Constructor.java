@@ -40,7 +40,6 @@ Bu zaman kaybını büyük ölçüde azaltır.
         staticMeth(); // Direkt call edilebilir static oldugu icin.
         obj3.nonStaticMeth(); // Ancak obj ile call edilebilir. Static degil cunku.
 
-
     } // end of main
 
     public void nonStaticMeth(){
