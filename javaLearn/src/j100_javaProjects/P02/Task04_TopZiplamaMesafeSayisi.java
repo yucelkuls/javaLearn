@@ -2,7 +2,7 @@ package j100_javaProjects.P02;
 
 import java.util.Scanner;
 
-public class Task04_TopZıplamaMesafeSaysı {
+public class Task04_TopZiplamaMesafeSayisi {
 
    /* HAFTANIN TASK'iiii :-)
     Bir top belirli yükseklikten atılmaktadır.

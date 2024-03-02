@@ -1,6 +1,6 @@
 package j100_javaProjects.P02;
 
-public class Task08_TekrarlıListElememanPrint {
+public class Task08_TekrarliListElememanPrint {
         /*
         Girilen bir listte tekararlı elemanları print eden  metod create ediniz.
          *
