@@ -1,5 +1,6 @@
 package j19_Constructor;
 public class myTest {
+
     public static void swing() {
         System.out.print("swing ");
     }
@@ -15,5 +16,6 @@ public class myTest {
         rope.play();
         myTest rope2 = null;
         rope2.play();
+
     }
 }
