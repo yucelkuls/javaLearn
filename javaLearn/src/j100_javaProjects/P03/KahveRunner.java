@@ -5,6 +5,7 @@ public class KahveRunner {
 
     public static void main(String[] args) {
         Kahve customer1 = new Kahve();
+
         customer1.choiseCoffee(); // objName ile method call edildi.
         System.out.println(customer1);
         customer1.choiseMilk();

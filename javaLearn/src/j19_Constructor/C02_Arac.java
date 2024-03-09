@@ -58,4 +58,5 @@ public class C02_Arac {//class level
         System.out.println("arac2 = " + arac2);//marka='BMW', model='X6', km=333000, motorHacim=4000, vitesAuto=true, yil=2012
 
     } // end of main
+
 } // end of Class

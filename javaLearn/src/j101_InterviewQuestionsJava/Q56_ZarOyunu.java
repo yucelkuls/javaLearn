@@ -1,3 +1,5 @@
+package j101_InterviewQuestionsJava;
+
 public class Q56_ZarOyunu {
     /* Task->
     Iki tane atilan zarin toplamlarinin 9 olmasi durumanda "Kazandiniz" ,
