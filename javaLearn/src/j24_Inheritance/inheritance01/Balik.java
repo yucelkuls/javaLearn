@@ -1,4 +1,4 @@
-package j24_Inheritance;
+package j24_Inheritance.inheritance01;
 
 public class Balik extends Hayvanlar{
     public Balik() {

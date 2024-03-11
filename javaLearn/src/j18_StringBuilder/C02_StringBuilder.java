@@ -38,7 +38,7 @@ public class C02_StringBuilder {
 
         // 3. yol
 
-        StringBuilder sb3=new StringBuilder(17);//17 capasity bir bos sb tanimladi
+        StringBuilder sb3=new StringBuilder(17);//17 capacity bir bos sb tanimlandi
         System.out.println("sb3 = " + sb3);//hiclik
         System.out.println("sb3.length() = " + sb3.length());//0
         System.out.println("sb3.capacity() = " + sb3.capacity());//17
@@ -98,8 +98,8 @@ public class C02_StringBuilder {
         StringBuilder sb6=new StringBuilder("Bahanesi olanin basarisi olmaz");
         StringBuilder sb7=new StringBuilder("Bahanesi olanin basarisi olmaz");
         StringBuilder sb8=new StringBuilder("Bahanesi olanin basarisi Olmaz");
-        System.out.println("sb6.length() = " + sb6.length());
-        System.out.println("sb6.capacity() = " + sb6.capacity());
+        System.out.println("sb6.length() = " + sb6.length()); // 30
+        System.out.println("sb6.capacity() = " + sb6.capacity()); // 46
         String str1="Bahanesi olanin basarisi olmaz";
         System.out.println("sb6.compareTo(sb7) = " + sb6.compareTo(sb7));//0
         System.out.println("sb6.compareTo(sb8) = " + sb6.compareTo(sb8));//32
@@ -116,5 +116,11 @@ public class C02_StringBuilder {
         //SB'de karakterleri indexe gore ters cevirme yani tersten yazma
         System.out.println("reverse oncesi sb6 : "+sb6);//Bahanesi olanin basarisi olmaz
         System.out.println("reverse sonrasi sb6 : "+sb6.reverse());//zamlo isirasab ninalo isenahaB
+
+        StringBuilder nsb=new StringBuilder("Bahanesi olanin basarisi olmaz");
+        StringBuilder nsb2=new StringBuilder("basari");
+        System.out.println(nsb.insert(9, nsb2, 0, (nsb2.length())));
+
+
     }
 }

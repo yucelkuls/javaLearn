@@ -16,6 +16,22 @@ public class Q09_ArmstrongNumber_4Digits {
 
     public static void main(String[] args) {
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("please enter a number: ");
+        int n = sc.nextInt();
+//        int digit = String.valueOf(n).length(); 2.meth basamak sayisini bulma
+
+        for (int i = 1; i <= n; i++) {
+            int digit = (int) Math.floor(Math.log10(i) + 1);  //  1.meth basamak sayisini bulma
+            int total = 0;
+            int temp = i;
+            while (temp > 0) {
+                total += (int) Math.pow(temp % 10, digit);
+                temp/= 10;
+            }
+            System.out.println(i == total ? i + " is armstrong": i + " is not armstrong");
+        }
+
 
 
     }//main sonu

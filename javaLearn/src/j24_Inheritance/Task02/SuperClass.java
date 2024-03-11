@@ -6,6 +6,4 @@ public class SuperClass {
     public String ebikGabik(){
         return "Agama bolcana super offer";
     }
-
-
 }

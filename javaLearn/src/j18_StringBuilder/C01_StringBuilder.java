@@ -14,8 +14,8 @@ String'lerde method kullanarak String'i degistirmek atama yapmadan mumkun degild
  StringBuffer =mutable==>degisebilir,less efficient/ daha yavas ,
  StringBuffer synchronized,thread safe.
 
-StringBuilders = mutable==>degisebilir ,
-not senkronized/not thread safe,fakat more efficient(daha etkili,ve hizli )
+ StringBuilders = mutable==>degisebilir ,
+ not senkronized/not thread safe,fakat more efficient(daha etkili,ve hizli )
 
 1) String Class'i immutable(Degistirilemez)dir. Java mutable Stringler uretebilmemiz icin
    StringBuilder isimli bir class uretmistir.

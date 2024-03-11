@@ -17,7 +17,7 @@ public class Q01_CountsOfCharactersWithArray {
 
        String strArr[] = str.split("");
        System.out.println(Arrays.toString(strArr));
-       int count = 0;
+       int count;
        String output = "";
        for (int i = 0; i < strArr.length; i++) {
            count = 0;
@@ -33,19 +33,19 @@ public class Q01_CountsOfCharactersWithArray {
        System.out.println(output);
 
 //       2. yol
-       count = 0;
+       int sayac;
        output = "";
        for (int i = 0; i < str.length(); i++) {
-           count = 0;
+           sayac = 0;
            for (int j = 0; j < str.length(); j++) {
                if (String.valueOf(str.charAt(i)).equals(String.valueOf(str.charAt(j)))) {
-                   count++;
+                   sayac++;
                }
            }
            if (!output.contains(String.valueOf(str.charAt(i)))) {
-               output += "" + String.valueOf(str.charAt(i)) + count + " ";
+               output += "" + str.charAt(i)+" = " + sayac + ", ";
            }
        }
-       System.out.println("2.yol: " + output);
+       System.out.println(output);
    }
 }

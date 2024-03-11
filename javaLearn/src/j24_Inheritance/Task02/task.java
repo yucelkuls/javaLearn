@@ -10,7 +10,7 @@ public class task {
      ebikGabık methodu  "Agam SubClass'dan selam dewamkeee. "  return ediniz
 
    javaCAN  method create edip : SubClass'daki ebikGabık methodunu ve SuperClasstaki ebikGabık
-    methodunu call edip SubClass  ve SuperClass'taki int sayi print ediniz.
+    methodunu call edip SubClass ve SuperClass'taki int sayi print ediniz.
 
      son olarak main methodta  javaCAN u call ediniz..
 
