@@ -34,9 +34,18 @@ public class C01_ArithmeticException {
         }catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("2. catch blok runed");
             System.out.println("Greetings, from 2.catch blok");
-        }catch (Exception e) {
+        }catch (Exception e) { //Exception all exc. types, parent class idir.
             System.out.println("Biggest catch blok runed");
             System.out.println("Greetings, from biggest catch blok");
+        }finally {  // en son mutlaka yapilmasi gereken blok (hata alinmasa da finally calisir.
+            System.out.println("Greetings from finally blok");
+            /*
+       try - catch içinde yapılan işlemlerden sonra mutlaka çalışması gereken block varsa finally  blok tanımlanır.
+       hata alınır ama finaly tanımlanırsa catch çalışmasa bile
+       pr akışı devam eder.finally block hata olsa da olmasa da calışır.
+       Cloud database ortamlarında bağlantı kesmek için kullanılır.cloud ile connection yazdıgınızda code
+       başarılı bir şekilde çalışırsa işlem bitiiğinde finally block ile connection kapanmazsa maliyet pahalı olur :(
+        */
         }
         System.out.println("If you are reading this message, the application is running smoothly :))");
 
