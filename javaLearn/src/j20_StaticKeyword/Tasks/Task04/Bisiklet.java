@@ -82,5 +82,6 @@ public class Bisiklet {
                "speed=" + speed +
                ", gear=" + gear +
                '}';
+
     }
 }

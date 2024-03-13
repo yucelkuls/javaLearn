@@ -17,4 +17,5 @@ public class Hayvanlar {  // Grandparent Class
     public void mM(){
         System.out.println("mM -> Hayvanlar class meth called");
     }
+
 }

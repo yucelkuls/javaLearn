@@ -45,7 +45,6 @@ class StudentRunner {//inner class level
 
         s1.setName("Javatar");
         s1.setAge(28);
-
         System.out.println(s1); //Student name is Javatar
                                 //He is 28 years old
 

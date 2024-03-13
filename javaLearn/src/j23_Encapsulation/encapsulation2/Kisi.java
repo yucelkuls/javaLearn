@@ -49,9 +49,11 @@ runner class'da obj ile field ları print eden code create ediniz
         return password;
     }
 
-//    public void setPassword(String password) {
-//        this.password = password;
-//    }
+    /*
+        public void setPassword(String password) {
+            this.password = password;
+        }
+    */
 
     public int getYas() {
 

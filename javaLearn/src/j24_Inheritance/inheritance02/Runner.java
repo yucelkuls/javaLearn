@@ -25,5 +25,22 @@ public class Runner {
 Ahan da trick köşesinde böğün->inherit edilmiş herhangi bir obj varaible  Data type göre call edilir
 Variable araştırmaya data type Class'dan başlanıp parentlere gidilir.
 */
+        System.out.println("******************");
+        k1.mA(); // mA -> Hayvanlar class meth called
+        k1.mC(); // Kedi class meth called
+        k1.mM(); // Memeliler class meth called
+        System.out.println("******************");
+        k2.mA(); // Hayvanlar class meth called
+        k2.mC(); // Kedi class meth called
+        k2.mM(); // Memeliler class meth called
+        System.out.println("******************");
+        k3.mA(); // Hayvanlar class meth called
+        k3.mM(); // Memeliler class meth called
+       // k3.mC();  // kendinde olmayan methodu getiremiyor.
+        /*
+ Ahan da trick köşesinde böğün:inherit edilmiş herhangi bir obj methodları  cons. göre call edilir
+ method araştırmaya cons. Class'dan başlanıp parentlere gidilir
+ */
+
     }
 }
