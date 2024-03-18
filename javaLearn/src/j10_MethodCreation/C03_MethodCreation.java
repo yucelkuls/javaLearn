@@ -23,6 +23,6 @@ public class C03_MethodCreation {
         System.out.println("Hello");
         gecmeNotu(55);  // main disi ama method icine call edilir
     }
-//    gecmeNotu(66);  Main disina method disina call edilemez. -> CTE
+//    gecmeNotu(66);  j26_Abstract.Main disina method disina call edilemez. -> CTE
 
 }

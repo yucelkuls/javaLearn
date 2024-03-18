@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Q42_CreateMethodWithArray {
 
-    /*    ||This Part Should be in Main Method||
+    /*    ||This Part Should be in j26_Abstract.Main Method||
 
          -Create an array of size 5, assign some random values from 0 to 10
          -(use random class and for loop to assign values)

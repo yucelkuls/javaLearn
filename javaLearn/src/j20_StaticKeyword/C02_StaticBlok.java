@@ -15,11 +15,11 @@ public class C02_StaticBlok {  // Class level
         System.out.println("2. static blok after update name : "+name);
     }
     public static void main(String[] args) {   // main level
-        System.out.println("*** Main meth. run ***");
-        System.out.println("Main meth. before update name : "+name);
+        System.out.println("*** j26_Abstract.Main meth. run ***");
+        System.out.println("j26_Abstract.Main meth. before update name : "+name);
         name = "JavvaMain";
-        System.out.println("Main meth. after update name : "+name);
-        System.out.println("*** Main method is over ***");
+        System.out.println("j26_Abstract.Main meth. after update name : "+name);
+        System.out.println("*** j26_Abstract.Main method is over ***");
 
     } //end of main
 

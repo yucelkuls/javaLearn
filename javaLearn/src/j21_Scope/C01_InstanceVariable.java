@@ -12,7 +12,7 @@ public class C01_InstanceVariable { // Class level
     char unvan;//initial edilmemis obj variable->' '
     /*												INSTANCE VARIABLE
 
- 1) Main method'un ve urettiginiz diger methodlarin disinda  (ustunde veya altinda), class'in icinde
+ 1) j26_Abstract.Main method'un ve urettiginiz diger methodlarin disinda  (ustunde veya altinda), class'in icinde
      olusturulan variable'lara non-Static Class level "instance variable" denir.
  2) Instance variable'lar object olusturulurken olusturulur ve her obje'ye bu variable'lar monte edilir.
  3) Instance variable'lara deger atamasi yapsaniz da olur, yapmasaniz da olur.

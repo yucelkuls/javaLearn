@@ -13,7 +13,7 @@ public class MainClas {
 
     /*
 
-        Main methodunda
+        j26_Abstract.Main methodunda
 
      İlk olarak randomGenerator method undan random sayıyı alın
 
