@@ -1,5 +1,5 @@
 package j27_Interface.Tasks.Task01;
 
-public class Kare{
+public class Kare extends Dikdortgen{
 
 }
