@@ -87,13 +87,13 @@ public class C01_Set {
         HashSet<Integer> hs5=new HashSet<Integer>(Arrays.asList(16,54,67,63,47,20));
         HashSet<Integer> hs6=new HashSet<Integer>(Arrays.asList(6,54,61,63,17,20));
 
-        System.out.println("hs5.retainAll(hs6) = " + hs5.retainAll(hs6));//true
-        HashSet<Integer> ortakEleman=new HashSet<>(hs6);
-        System.out.println("ortakEleman = " + ortakEleman);//[17, 20, 6, 54, 61, 63]
-        System.out.println("ortakEleman.retainAll(hs5) = " + ortakEleman.retainAll(hs5));//true
+        System.out.println("hs5.retainAll(hs6) = " + hs5.retainAll(hs6));//true->ortak elemanlar hs5 setine atandi
+        HashSet<Integer> ortakEleman=new HashSet<>(hs5);//hs5 elemanlari yani ortak elemanlar ortakElemanlar hashSet'ine atandi
+        System.out.println("ortakEleman = " + ortakEleman);//[20, 54, 63]
+        System.out.println("ortakEleman.retainAll(hs6) = " + ortakEleman.retainAll(hs6));//true
 
         System.out.println("hs5.equals(hs6) = " + hs5.equals(hs6));//false
-        System.out.println("ortakEleman.equals(hs6) = " + ortakEleman.equals(hs6));//false
+        System.out.println("ortakEleman.equals(hs5) = " + ortakEleman.equals(hs5));//true
 
     }
 }
