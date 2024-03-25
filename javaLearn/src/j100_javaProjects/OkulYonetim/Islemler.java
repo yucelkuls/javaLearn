@@ -1,4 +1,4 @@
-package j100_javaProjects.OkulYonetim;
+package okulYonetim;
 
 import java.util.Scanner;
 
@@ -50,8 +50,8 @@ public class Islemler implements IslemlerInterface {
 
     @Override
     public void ekleme() {
-        System.out.println("Kimlik no giriniz: ");
-        String kimlikID = scan.next();
+        System.out.println("Kimlik no giriniz");
+        String kimlikID=scan.next();
         kimlikIDKontrol(kimlikID);
         if (secim==1){
             ogrenciBilgiAlKaydet(kimlikID);
@@ -62,77 +62,77 @@ public class Islemler implements IslemlerInterface {
         }
     }
 
+    private void ogretmenBilgiAlKaydet(String kimlikID) {
+        Ogretmen ogretmen=new Ogretmen();
+        System.out.println("Ad soyad giriniz");
+        scan.nextLine();
+//        String adSoyad=scan.nextLine();
+//        ogretmen.setAdSoyad(adSoyad);
+        ogretmen.setAdSoyad(scan.nextLine());
+        System.out.println("Yasinizi giriniz");
+        ogretmen.setYas(scan.nextInt());
+        scan.nextLine();//dummy
+        System.out.println("Bolumunuzu giriniz");
+        ogretmen.setBolum(scan.nextLine());
+        System.out.println("Sicilinizi giriniz");
+        ogretmen.setSicilNo(scan.next());
+        Ogretmen.ogretmenListesiMap.put(kimlikID,ogretmen);
+        System.out.println("Ogretmen basariyla eklendi");
+    }
+
+    private void ogrenciBilgiAlKaydet(String kimlikID) {
+        scan.nextLine();
+        System.out.println("Adinizi ve soyadinizi giriniz");
+        String adSoyad=scan.nextLine();
+        System.out.println("yasinizi giriniz");
+        int yas=scan.nextInt();
+        System.out.println("Numaranizi giriniz");
+        int numara=scan.nextInt();
+        System.out.println("Sinifinizi giriniz");
+        String sinif=scan.next();
+        Ogrenci ogrenci=new Ogrenci(adSoyad,yas,numara,sinif);
+        Ogrenci.ogrenciListesiMap.put(kimlikID,ogrenci);
+        System.out.println("Ogrenci basariyla eklendi");
+    }
+
     private void kimlikIDKontrol(String kimlikID) {
         if (kimlikID.length()==11){
             if (Integer.parseInt(kimlikID.substring(kimlikID.length()-1))%2==0){
-                try{
-                    if (Ogrenci.ogrenciListesiMap.containsKey(kimlikID) || Ogretmen.ogretmenListesiMap.containsKey(kimlikID)){
-                        throw new ConflictException("Bu kimlik nolu kisi zaten kayitlidir");
+                try {
+                    if (Ogrenci.ogrenciListesiMap.containsKey(kimlikID)||Ogretmen.ogretmenListesiMap.containsKey(kimlikID)){
+                        throw new ConflictException("Bu kimlik nolu kisi zaten kayitli");
                     }
                 }catch (ConflictException e){
                     System.out.println(e.getMessage());
                     islemlerMenu(secim);
                 }
             }else {
-                System.out.println("Okulumuz yabanci uyruklu kisileri kabul etmiyor");
+                System.out.println("Okulumuz yabanci vatandas kabul etmiyor");
                 ekleme();
             }
         }else {
-            System.out.println("Kimlik no 11 karakterden olusur");
+            System.out.println("Kimlik no 11 rakamdan olusur");
             ekleme();
         }
     }
 
-    private void ogretmenBilgiAlKaydet(String kimlikID){
-        Ogretmen ogretmen = new Ogretmen();
-        System.out.println("Ad soyadi giriniz : ");
-        scan.nextLine();
-        ogretmen.setAdSoyad(scan.nextLine());
-        System.out.println("Yasinizi giriniz : ");
-        ogretmen.setYas(scan.nextInt());
-        scan.nextLine(); // dummy (int den sonra nextLine alindiginda hata veriyor)
-        System.out.println("Bolumunuzu giriniz : ");
-        ogretmen.setBolum(scan.nextLine());
-        System.out.println("Sicilinizi giriniz : ");
-        ogretmen.setSicilNo(scan.next());
-        Ogretmen.ogretmenListesiMap.put(kimlikID, ogretmen);
-        System.out.println("Ogretmen basariyla eklendi");
-
-
-    }
-    private void ogrenciBilgiAlKaydet(String kimlikID){
-        scan.nextLine();
-        System.out.println("Adinizi ve soyadiniz giriniz : ");
-        String adSoyad = scan.nextLine();
-        System.out.println("Yasinizi giriniz: ");
-        int yas = scan.nextInt();
-        System.out.println("Numaranizi giriniz : ");
-        int numara = scan.nextInt();
-        System.out.println("Sinifinizi giriniz : ");
-        String sinif = scan.next();
-        Ogrenci ogrenci = new Ogrenci(adSoyad,yas,numara,sinif);
-        Ogrenci.ogrenciListesiMap.put(kimlikID,ogrenci);
-        System.out.println("Ogrenci basariyla eklendi");
-
-    }
-
     @Override
     public void arama() {
-        System.out.println("Kimlik no giriniz : ");
-        String kimlikID = scan.next();
-        if (secim == 1){
+        System.out.println("Kimlik no giriniz");
+        String kimlikID=scan.next();
+        if (secim==1){
             try {
-                if (Ogrenci.ogrenciListesiMap.containsKey(kimlikID)) {
+                if (Ogrenci.ogrenciListesiMap.containsKey(kimlikID)){
                     System.out.println(Ogrenci.ogrenciListesiMap.get(kimlikID));
-                } else {
-                    throw new ResourceNotFoundException(kimlikID + "kimlik nolu ogrenci kayitli degil");
+                }else {
+                    throw new ResourceNotFoundException(kimlikID+ " kimlik nolu ogrenci kayitli degil");
                 }
             }catch (ResourceNotFoundException e){
                 System.out.println(e.getMessage());
                 arama();
             }
         }else {
-            try{
+            try {
                 if (Ogretmen.ogretmenListesiMap.containsKey(kimlikID)){
                     System.out.println(Ogretmen.ogretmenListesiMap.get(kimlikID));
                 }else {
@@ -145,28 +145,54 @@ public class Islemler implements IslemlerInterface {
         }
     }
 
-
     @Override
     public void listeleme() {
         if (secim==1){
-            System.out.println();
+            System.out.println(Ogrenci.ogrenciListesiMap);
+        }else {
+            System.out.println(Ogretmen.ogretmenListesiMap);
         }
     }
 
     @Override
     public void silme() {
-
+        System.out.println("Kimlik no giriniz");
+        String kimlikID=scan.next();
+        if (secim==1){
+            try {
+                if (Ogrenci.ogrenciListesiMap.containsKey(kimlikID)){
+                    Ogrenci ogrenci=Ogrenci.ogrenciListesiMap.remove(kimlikID);
+                    System.out.println(ogrenci.getAdSoyad()+" isimli ogrenciyi sildiniz");
+                }else {
+                    throw new ResourceNotFoundException(kimlikID+ " kimlik nolu ogrenci kayitli degil");
+                }
+            }catch (ResourceNotFoundException e){
+                System.out.println(e.getMessage());
+                silme();
+            }
+        }else {
+            try {
+                if (Ogretmen.ogretmenListesiMap.containsKey(kimlikID)){
+                    Ogretmen ogretmen=Ogretmen.ogretmenListesiMap.remove(kimlikID);
+                    System.out.println(ogretmen.getAdSoyad()+" isimli ogretmen artik bizimle calismiyor");
+                }else {
+                    throw new ResourceNotFoundException(kimlikID+ " kimlik nolu ogretmen kayitli degil");
+                }
+            }catch (ResourceNotFoundException e){
+                System.out.println(e.getMessage());
+                silme();
+            }
+        }
     }
 
     @Override
     public void anaMenu() {
-        AnaMenu obj = new AnaMenu();
+        AnaMenu obj=new AnaMenu();
         obj.giris();
     }
 
     @Override
     public void cikis() {
-        System.out.println("Cikis yapiyorsunuz, tekrar bekleriz...");
-
+        System.out.println("Cikis yapiyorsunuz. Tekrar bekleriz");
     }
 }
